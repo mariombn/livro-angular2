@@ -1,9 +1,9 @@
 <h2>*ngFor</h2>
 
 <ul>
-    <li *ngFor='let nome of nomes'>Nome da pessoa é: {{nome}}</li>
+    <li *ngFor='let nome of nomes'>ID: {{nome.id}} - Nome da pessoa é: {{nome.nome}}</li>
   </ul>
 
 <ul>
-  <li *ngFor='let nome of nomes, let i = index'>Indice: {{i+1}} - Nome da pessoa é: {{nome}}</li>
+  <li *ngFor='let nome of nomes, let i = index'>ID: {{nome.id}} - Nome da pessoa é: {{nome.nome}} - Indice: {{i+1}}</li>
 </ul>

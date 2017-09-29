@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgForComponent implements OnInit {
 
-  nomes:string[] = ['Mario', 'João', 'Ricardo', 'Aline'];
+  nomes:any[] = [
+    {id:1, nome:'Mario'},
+    {id:2, nome:'Aline'},
+    {id:3, nome:'João'},
+    {id:4, nome:'Carlos'},
+  ];
 
   constructor() { }
 
